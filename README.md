@@ -1,52 +1,40 @@
 # Project Name
-> Outline a brief description of your project.
+> Surprise Housing Advance Regression
+
+> A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below    their actual values and flip them on at a higher price. For the same purpose, the company has collected a data set from the sale of houses in Australia. The company is looking at prospective properties to buy to enter the market. You are required to build a regression model using regularisation in order to predict the actual value of the prospective properties and decide whether to invest in them or not.
 
 
 ## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
-
-<!-- You can include any other section that is pertinent to your problem -->
+* General Info
+* Technologies Used
+* Conclusions
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+This project performs the exploratory data analysis on the housing dataset from Surprise housing. Prepares a linear regression model and checks the r2 score, RSS and RMSE. This project does regularization using Ridge and Lasso Regression and calculates the optimum value of Ridge and Lasso. It compares the r2 score, RSS and RMSE for Ridge and Lasso regression. It also compares the model coefficients for Ridge and Lasso regression and identifes to 10 predictor variable.
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+* Optimal value of alpha for: Ridge = 1 and Lasso = 0.0001
+* R2 score for train data for Ridge = 0.917469
+* R2 score for test data for Ridge = 0.851355
+* R2 score for train data for Lasso = 0.915108	
+* R2 score for test data for Lasso = 0.849445
+* Top 10 features are :
+  - 1stFlrSF :First Floor square feet
+  - 2ndFlrSF : Above grade (ground) living area square feet
+  - OverallQual : Rates the overall material and finish of the house
+  - SaleCondition_Normal : Condition of sale
+  - Condition1_Norm : Proximity to various conditions
+  - Neighborhood_Somerst : Physical locations within Ames city limits
+  - BsmtFinSF1 : Rating of basement finished area
+  - LotArea : Lot size in square feet
+  - SaleType_New : Type of sale
+  - OverallCond : Rates the overall condition of the house
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+* NumPy version: 1.21.5
+* Pandas version: 1.4.2
+* Seaborn version: 0.11.2
+* Sklearn version: 1.1.2
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
-
-## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
